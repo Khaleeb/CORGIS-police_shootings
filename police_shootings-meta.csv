@@ -1,0 +1,31 @@
+Name,Police Shootings,,,
+Version,0.0.2,,,
+Author,Caleb Davis (caldavis@udel.edu),,,
+Created,03/22/21,,,
+Data File,police_shootings-corgis.csv,,,
+Overview,"“The Washington Post is compiling a database of every fatal shooting in the United States by a police officer in the line of duty since Jan. 1, 2015 by culling local news reports, law enforcement websites and social media and by monitoring independent databases. The Post conducted additional reporting in many cases. """,,,
+Data Source,Washington Post Github: https://github.com/washingtonpost/data-police-shootings,,,
+Description,https://www.washingtonpost.com/national/how-the-washington-post-is-examining-police-shootings-in-the-united-states/2016/07/07/d9c52238-43ad-11e6-8856-f26de2537a9d_story.html,,,
+Tags,"""violence, crime, violent, police, shootings, race, location, time""",,,
+Row,Shootings,,,
+Row Explanation,A fatal shooting that occurred in the US since 2015,,,
+Acknowledgement,,,,
+Icon,police_shootings-icon.png,,,
+Splash,police_shootings-icon.png,,,
+Properties,Name,Type,Index,Description
+,Victim.Name,str,,"“Full name of the victim, ‘Unknown’ if not reported”"
+,Victim.Age,int,,"“Age of the victim, 0 if not reported”"
+,Victim.Gender,str,,"“Gender of victim (‘Male’ or ‘Female’), ‘Unknown’ if not reported”"
+,Victim.Race,str,,"“Race of victim (Asian, African American, White, Hispanic, Native American, Other), ‘Unknown’ if not reported”"
+,Setting.Date.Month,int,,“integer Month in which shooting occured”
+,Setting.Date.Day,int,,“integer Day in which shooting occurred”
+,Setting.Date.Year,int,,“integer Year in which shooting ocurred”
+,Setting.Date.Full,str,TRUE,“string Date (MM/DD/YYYY) in which shooting occurred”
+,Setting.Location.City,str,,“Name of City in which shooting occurred”
+,Setting.Location.State,str,TRUE,“Name of State in which shooting occurred”
+,Factors.Armed,str,,"“Description of weapons the victim had, ‘unknown‘ if not reported”"
+,Factors.Mental-Illness,bool,,“True if signs of mental illness were percieved in the victim”
+,Factors.Threat-Level,str,,"“Threat of victim as percieved by police, ‘unknown’ if not reported”"
+,Factors.Fleeing,str,,"“Means by which the victim was fleeing, or ‘not fleeing’, ‘unknown’ if not reported”"
+,Factors.Manner,str,,“Manner of victim’s death”
+,Factors.Body-Cam,bool,,"“True if a body cam was recording the incident, Flase otherwise”"
